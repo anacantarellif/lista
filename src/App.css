@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+
 
 .App-logo {
   height: 40vmin;
@@ -34,5 +32,39 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.App {
+  text-align: center;
+  margin: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 8px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 8px;
+  margin-left: 5px;
+}
+
+div {
+  margin: 10px 0;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  input, button {
+    width: 100%;
+    margin: 5px 0;
   }
 }
