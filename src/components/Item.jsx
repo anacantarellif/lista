@@ -1,29 +1,29 @@
 import React, { useState } from 'react';
 
-const Item = ({ id, item, editarItem, removerItem }) => {
-  const [Editado, setEditado] = useState(false);
-  const [newItem, setNovoItem] = useState(item);
+const Item = ({ id, item, editItem, removeItem }) => {
+  const [isEditing, setIsEditing] = useState(false);
+  const [newItem, setNewItem] = useState(item);
 
   const handleEdit = () => {
-    editarItem(id, newItem);
-    setEditado(false);
+    editItem(id, newItem);
+    setIsEditing(false);
   };
 
   return (
     <div>
-      {Editado ? (
+      {isEditing ? (
         <input
           type="text"
           value={newItem}
-          onChange={(e) => setNovoItem(e.target.value)}
+          onChange={(e) => setNewItem(e.target.value)}
         />
       ) : (
         <span>{item}</span>
       )}
-      <button onClick={() => setEditado(!isEditing)}>
+      <button onClick={() => setIsEditing(!isEditing)}>
         {isEditing ? 'Salvar' : 'Editar'}
       </button>
-      <button onClick={() => removerItem(id)}>Remover</button>
+      <button onClick={() => removeItem(id)}>Remover</button>
     </div>
   );
 };

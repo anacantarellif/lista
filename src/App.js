@@ -11,11 +11,11 @@ const App = () => {
     setItems([...items, item]);
   };
 
-  const editarItem = (id, novoItem) => {
-    setItems(items.map((item, index) => (index === id ? novoItem : item)));
+  const editItem = (id, newItem) => {
+    setItems(items.map((item, index) => (index === id ? newItem : item)));
   };
 
-  const removerItem = (id) => {
+  const removeItem = (id) => {
     setItems(items.filter((_, index) => index !== id));
   };
 
@@ -23,10 +23,9 @@ const App = () => {
     <div className="App">
       <Header />
       <Form addItem={addItem} />
-      <ItemList items={items} editarItem={editarItem} removerItem={removerItem} />
+      <ItemList items={items} editItem={editItem} removeItem={removeItem} />
     </div>
   );
 };
 
 export default App;
-
