@@ -1,7 +1,7 @@
 # Lista de Ideias de Decoração
 
 ## Descrição da aplicação como um todo
-Esta aplicação web permite adicionar usando `FormularioIdeia`, o usuário pode adicionar novas ideias de decoração, exibir as ideias com `ListaIdeias` mostra todas as ideias adicionadas, editar esses ítens utilizando `ItemIdeia` para cada um da lista e remover ideias com `ItemIdeia`.
+Esta aplicação web responsiva permite adicionar usando `FormularioIdeia`, o usuário pode adicionar novas ideias de decoração, exibir as ideias com `ListaIdeias` mostra todas as ideias adicionadas, editar esses ítens utilizando `ItemIdeia` para cada um da lista e remover ideias com `ItemIdeia`.
 
 ## Descrição de cada componente
 
